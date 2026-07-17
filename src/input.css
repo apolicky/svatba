@@ -24,6 +24,10 @@
 }
 
 @layer base {
+  nav {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
   .font-title {
     /* transform: rotate(-9.1deg); */
     transform-origin: center;
