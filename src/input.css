@@ -16,6 +16,11 @@
     filter: brightness(0) saturate(100%) invert(69%) sepia(20%) saturate(900%)
       hue-rotate(5deg) brightness(92%);
   }
+
+  .filter-red {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(77%) saturate(4700%)
+      hue-rotate(347deg) brightness(60%);
+  }
 }
 
 @layer base {

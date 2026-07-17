@@ -571,6 +571,14 @@ strong {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
+.-top-4 {
+  top: -1rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -657,20 +665,12 @@ strong {
   height: 0.75rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.h-8 {
-  height: 2rem;
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-px {
   height: 1px;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .min-h-screen {
@@ -772,12 +772,12 @@ strong {
   border-color: rgb(0 62 31 / var(--tw-border-opacity, 1));
 }
 
-.border-gold\/20 {
-  border-color: rgb(196 162 99 / 0.2);
+.border-red\/20 {
+  border-color: rgb(191 78 48 / 0.2);
 }
 
-.border-gold\/50 {
-  border-color: rgb(196 162 99 / 0.5);
+.border-red\/50 {
+  border-color: rgb(191 78 48 / 0.5);
 }
 
 .bg-cream {
@@ -790,13 +790,13 @@ strong {
   background-color: rgb(0 62 31 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gold {
+.bg-red {
   --tw-bg-opacity: 1;
-  background-color: rgb(196 162 99 / var(--tw-bg-opacity, 1));
+  background-color: rgb(191 78 48 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gold\/30 {
-  background-color: rgb(196 162 99 / 0.3);
+.bg-red\/30 {
+  background-color: rgb(191 78 48 / 0.3);
 }
 
 .px-10 {
@@ -824,11 +824,6 @@ strong {
   padding-bottom: 0.25rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -842,6 +837,11 @@ strong {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-10 {
@@ -876,9 +876,9 @@ strong {
   font-family: "The Holiday", cursive;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -951,14 +951,6 @@ strong {
   color: rgb(255 248 239 / var(--tw-text-opacity, 1));
 }
 
-.text-cream\/50 {
-  color: rgb(255 248 239 / 0.5);
-}
-
-.text-cream\/60 {
-  color: rgb(255 248 239 / 0.6);
-}
-
 .text-forest {
   --tw-text-opacity: 1;
   color: rgb(0 62 31 / var(--tw-text-opacity, 1));
@@ -976,9 +968,13 @@ strong {
   color: rgb(0 62 31 / 0.8);
 }
 
-.text-gold {
+.text-red {
   --tw-text-opacity: 1;
-  color: rgb(196 162 99 / var(--tw-text-opacity, 1));
+  color: rgb(191 78 48 / var(--tw-text-opacity, 1));
+}
+
+.text-red\/50 {
+  color: rgb(191 78 48 / 0.5);
 }
 
 .shadow-sm {
@@ -999,9 +995,9 @@ strong {
   transition-duration: 150ms;
 }
 
-.filter-gold {
-  filter: brightness(0) saturate(100%) invert(69%) sepia(20%) saturate(900%)
-      hue-rotate(5deg) brightness(92%);
+.filter-red {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(77%) saturate(4700%)
+      hue-rotate(347deg) brightness(60%);
 }
 
 @font-face {
@@ -1027,9 +1023,9 @@ strong {
   background-color: rgb(0 62 31 / 0.9);
 }
 
-.hover\:bg-gold:hover {
+.hover\:bg-red:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(196 162 99 / var(--tw-bg-opacity, 1));
+  background-color: rgb(191 78 48 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-cream:hover {
@@ -1042,9 +1038,9 @@ strong {
   color: rgb(0 62 31 / var(--tw-text-opacity, 1));
 }
 
-.hover\:text-gold:hover {
+.hover\:text-red:hover {
   --tw-text-opacity: 1;
-  color: rgb(196 162 99 / var(--tw-text-opacity, 1));
+  color: rgb(191 78 48 / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover {
