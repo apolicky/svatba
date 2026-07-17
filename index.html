@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veronika &amp; Adam — 27. 11. 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body class="bg-cream font-body text-forest">
+    <!-- Nav -->
+    <nav class="fixed top-0 z-50 w-full bg-forest">
+      <div
+        class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3"
+      >
+        <span class="text-sm font-light tracking-widest text-cream/60"
+          >27. 11. 2026</span
+        >
+        <div class="hidden gap-6 text-sm font-light text-cream sm:flex">
+          <a
+            href="#timeline"
+            class="transition-colors hover:text-gold"
+            data-i18n="nav.schedule"
+            >Harmonogram</a
+          >
+          <a
+            href="#venue"
+            class="transition-colors hover:text-gold"
+            data-i18n="nav.venue"
+            >Místo</a
+          >
+          <a
+            href="#transport"
+            class="transition-colors hover:text-gold"
+            data-i18n="nav.transport"
+            >Doprava</a
+          >
+          <a
+            href="#dresscode"
+            class="transition-colors hover:text-gold"
+            data-i18n="nav.dresscode"
+            >Dress code</a
+          >
+          <a
+            href="#gifts"
+            class="transition-colors hover:text-gold"
+            data-i18n="nav.gifts"
+            >Dary</a
+          >
+          <a href="#rsvp" class="transition-colors hover:text-gold">RSVP</a>
+        </div>
+        <button
+          id="lang-toggle"
+          class="rounded-full border border-gold/50 px-3 py-1 text-xs tracking-wider text-gold transition-all hover:bg-gold hover:text-forest"
+        >
+          EN
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="flex min-h-screen flex-col items-center justify-center px-4 pt-16 text-center"
+    >
+      <h1
+        class="font-title text-7xl leading-none text-forest sm:text-8xl lg:text-9xl"
+      >
+        veronika <span class="whitespace-nowrap">+ adam</span>
+      </h1>
+      <p
+        class="mb-6 text-xs font-light tracking-[0.3em] text-gold sm:text-sm"
+        data-i18n="hero.savethedate"
+      >
+        Save the Date
+      </p>
+      <div class="mx-auto my-8 h-px w-24 bg-gold"></div>
+      <p class="text-lg font-light tracking-widest text-forest sm:text-xl">
+        27. 11. 2026
+      </p>
+      <p
+        class="mt-2 font-light tracking-wide text-forest/60 sm:text-base"
+        data-i18n="hero.venue"
+      >
+        Atrium Žižkov · Praha 3
+      </p>
+      <a
+        href="#rsvp"
+        class="mt-12 border border-forest px-8 py-3 text-sm uppercase tracking-widest text-forest transition-all hover:bg-forest hover:text-cream"
+        data-i18n="hero.cta"
+      >
+        Potvrďte účast
+      </a>
+    </section>
+
+    <div class="flex justify-center py-4">
+      <img src="img/remdih.svg" alt="" aria-hidden="true" class="h-6 w-auto filter-gold" />
+    </div>
+
+    <!-- Timeline -->
+    <section id="timeline" class="mx-auto max-w-2xl px-4 py-16">
+      <h2
+        class="text-center font-title text-4xl text-forest sm:text-5xl"
+        data-i18n="timeline.heading"
+      >
+        harmonogram
+      </h2>
+      <p
+        class="mb-12 mt-2 text-center text-xs uppercase tracking-widest text-gold"
+        data-i18n="timeline.subheading"
+      >
+        Program dne
+      </p>
+
+      <div>
+        <!-- Arrival -->
+        <div class="flex gap-6">
+          <div class="w-28 shrink-0 pt-1 text-right">
+            <span class="text-sm font-light text-gold">12:00–13:00</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-gold"></div>
+            <div class="mt-1 w-px flex-1 bg-gold/30"></div>
+          </div>
+          <div class="pb-10">
+            <p class="font-medium text-forest" data-i18n="timeline.arrival">
+              Příchod hostů
+            </p>
+          </div>
+        </div>
+        <!-- Ceremony -->
+        <div class="flex gap-6">
+          <div class="w-28 shrink-0 pt-1 text-right">
+            <span class="text-sm font-light text-gold">14:00–15:00</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-gold"></div>
+            <div class="mt-1 w-px flex-1 bg-gold/30"></div>
+          </div>
+          <div class="pb-10">
+            <p class="font-medium text-forest" data-i18n="timeline.ceremony">
+              Obřad
+            </p>
+          </div>
+        </div>
+        <!-- Reception -->
+        <div class="flex gap-6">
+          <div class="w-28 shrink-0 pt-1 text-right">
+            <span class="text-sm font-light text-gold">15:00–23:00</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-gold"></div>
+            <div class="mt-1 w-px flex-1 bg-gold/30"></div>
+          </div>
+          <div class="pb-10">
+            <p class="font-medium text-forest" data-i18n="timeline.reception">
+              Recepce &amp; večeře
+            </p>
+            <p
+              class="mt-1 text-sm font-light text-forest/60"
+              data-i18n="timeline.reception.sub"
+            >
+              Raut, hudba a oslava
+            </p>
+          </div>
+        </div>
+        <!-- End -->
+        <div class="flex gap-6">
+          <div class="w-28 shrink-0 pt-1 text-right">
+            <span class="text-sm font-light text-gold">23:00</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-gold"></div>
+          </div>
+          <div class="pb-10">
+            <p class="font-medium text-forest" data-i18n="timeline.end">
+              Konec večera
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex justify-center py-4">
+      <img src="img/remdih.svg" alt="" aria-hidden="true" class="h-6 w-auto filter-gold" />
+    </div>
+
+    <!-- Venue -->
+    <section id="venue" class="mx-auto max-w-4xl px-4 py-16">
+      <h2
+        class="text-center font-title text-4xl text-forest sm:text-5xl"
+        data-i18n="venue.heading"
+      >
+        místo konání
+      </h2>
+      <p
+        class="mb-4 mt-2 text-center text-xs uppercase tracking-widest text-gold"
+        data-i18n="venue.subheading"
+      >
+        Kde nás najdete
+      </p>
+      <p class="text-center text-lg font-medium text-forest">Atrium Žižkov</p>
+      <p class="mb-10 text-center font-light text-forest/60">
+        Čajkovského 12, Praha 3
+      </p>
+      <div class="overflow-hidden rounded border border-gold/20 shadow-sm">
+        <iframe
+          src="https://maps.google.com/maps?q=Cajkovskeho+12+Praha+3&output=embed"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Atrium Žižkov"
+        ></iframe>
+      </div>
+      <div class="mt-6 text-center">
+        <a
+          href="https://maps.app.goo.gl/LYCDrHqSk6PRV7qu8"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm uppercase tracking-widest text-gold hover:underline"
+          data-i18n="venue.maplink"
+        >
+          Otevřít v Google Maps →
+        </a>
+      </div>
+    </section>
+
+    <div class="flex justify-center py-4">
+      <img src="img/remdih.svg" alt="" aria-hidden="true" class="h-6 w-auto filter-gold" />
+    </div>
+
+    <!-- Transport -->
+    <section id="transport" class="mx-auto max-w-2xl px-4 py-16">
+      <h2
+        class="text-center font-title text-4xl text-forest sm:text-5xl"
+        data-i18n="transport.heading"
+      >
+        doprava
+      </h2>
+      <p
+        class="mb-10 mt-2 text-center text-xs uppercase tracking-widest text-gold"
+        data-i18n="transport.subheading"
+      >
+        Jak se k nám dostat
+      </p>
+      <div class="space-y-7 font-light leading-relaxed text-forest/80">
+        <div>
+          <p
+            class="mb-1 font-medium text-forest"
+            data-i18n="transport.metro.title"
+          >
+            Metro
+          </p>
+          <p data-i18n="transport.metro.desc">
+            Linka A, stanice Jiřího z Poděbrad – cca 10 minut pěšky.
+          </p>
+        </div>
+        <div>
+          <p
+            class="mb-1 font-medium text-forest"
+            data-i18n="transport.tram.title"
+          >
+            Tramvaj
+          </p>
+          <p data-i18n="transport.tram.desc">
+            Zastávka Čajkovského – linky v okolí Žižkova.
+          </p>
+        </div>
+        <div>
+          <p
+            class="mb-1 font-medium text-forest"
+            data-i18n="transport.car.title"
+          >
+            Autem
+          </p>
+          <p data-i18n="transport.car.desc">
+            Parkování v okolních ulicích (modré zóny). Doporučujeme využít
+            veřejnou dopravu.
+          </p>
+        </div>
+        <div>
+          <p
+            class="mb-1 font-medium text-forest"
+            data-i18n="transport.hotel.title"
+          >
+            Ubytování
+          </p>
+          <p data-i18n="transport.hotel.desc">
+            Hotel Olšanka se nachází v docházkové vzdálenosti od místa konání.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex justify-center py-4">
+      <img src="img/remdih.svg" alt="" aria-hidden="true" class="h-6 w-auto filter-gold" />
+    </div>
+
+    <!-- Dress code -->
+    <section id="dresscode" class="mx-auto max-w-2xl px-4 py-16 text-center">
+      <h2 class="text-center font-title text-4xl text-forest sm:text-5xl">
+        dress code
+      </h2>
+      <p
+        class="mb-10 mt-2 text-xs uppercase tracking-widest text-gold"
+        data-i18n="dresscode.subheading"
+      >
+        Oblečení
+      </p>
+      <p
+        class="mb-3 text-lg font-medium text-forest"
+        data-i18n="dresscode.label"
+      >
+        Formální
+      </p>
+      <p
+        class="font-light leading-relaxed text-forest/70"
+        data-i18n="dresscode.desc"
+      >
+        Prosíme o formální večerní oblečení. Pánové smoking nebo tmavý oblek,
+        dámy večerní šaty nebo kostým. Bílá je vyhrazena pro nevěstu.
+      </p>
+    </section>
+
+    <div class="flex justify-center py-4">
+      <img src="img/remdih.svg" alt="" aria-hidden="true" class="h-6 w-auto filter-gold" />
+    </div>
+
+    <!-- Gifts -->
+    <section id="gifts" class="mx-auto max-w-2xl px-4 py-16 text-center">
+      <h2
+        class="text-center font-title text-4xl text-forest sm:text-5xl"
+        data-i18n="gifts.heading"
+      >
+        dary
+      </h2>
+      <p
+        class="mb-10 mt-2 text-xs uppercase tracking-widest text-gold"
+        data-i18n="gifts.subheading"
+      >
+        Přání
+      </p>
+      <p
+        class="font-light leading-relaxed text-forest/70"
+        data-i18n="gifts.desc"
+      >
+        Největší radost nám uděláte finanční hotovostí, která nám pomůže začít
+        náš společný život. Vaše přítomnost je pro nás tím největším darem.
+      </p>
+    </section>
+
+    <div class="flex justify-center py-4">
+      <img src="img/remdih.svg" alt="" aria-hidden="true" class="h-6 w-auto filter-gold" />
+    </div>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="mx-auto max-w-2xl px-4 py-16 text-center">
+      <h2 class="text-center font-title text-4xl text-forest sm:text-5xl">
+        rsvp
+      </h2>
+      <p
+        class="mb-6 mt-2 text-xs uppercase tracking-widest text-gold"
+        data-i18n="rsvp.subheading"
+      >
+        Potvrzení účasti
+      </p>
+      <p
+        class="mb-3 font-light leading-relaxed text-forest/70"
+        data-i18n="rsvp.desc"
+      >
+        Prosíme o potvrzení vaší účasti do <strong>31. 10. 2026</strong>.
+      </p>
+      <p class="mb-8 font-light text-forest/70" data-i18n="rsvp.how">
+        Dejte nám vědět na e-mail níže.
+      </p>
+      <a
+        href="mailto:svatba@apolicky.xyz"
+        class="inline-block bg-forest px-10 py-4 font-mono text-sm lowercase tracking-widest text-cream transition-colors hover:bg-forest/90"
+      >
+        svatba@apolicky.xyz
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-16 bg-forest py-10 text-center">
+      <p class="font-title text-3xl text-cream">veronika + adam</p>
+      <p class="mt-2 text-xs tracking-widest text-cream/50">
+        27. 11. 2026 · Atrium Žižkov · Praha 3
+      </p>
+    </footer>
+
+    <script src="src/i18n.js"></script>
+  </body>
+</html>

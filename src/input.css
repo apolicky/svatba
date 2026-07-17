@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'The Holiday';
+  src: url('../fonts/handswell.otf') format('opentype');
+  /* src: url('../fonts/the-holiday.otf') format('opentype'); */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer utilities {
+  .filter-gold {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(20%) saturate(900%)
+      hue-rotate(5deg) brightness(92%);
+  }
+}
+
+@layer base {
+  .font-title {
+    /* transform: rotate(-9.1deg); */
+    transform-origin: center;
+    /* padding-bottom: 1.25rem; */
+    zoom: 2.6;
+  }
+  strong {
+    @apply font-medium text-forest;
+  }
+}
