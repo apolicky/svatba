@@ -16,8 +16,13 @@
     <!-- Nav -->
     <nav class="fixed top-0 z-50 w-full bg-cream text-forest">
       <div
-        class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3"
+        class="relative mx-auto flex max-w-5xl items-center justify-between px-4 py-3"
       >
+        <span
+          id="nav-name"
+          class="pointer-events-none absolute left-1/2 -translate-x-1/2 font-title text-2xl text-forest opacity-0 transition-opacity duration-300 sm:hidden"
+          >v+a</span
+        >
         <span class="text-sm font-light tracking-widest">27. 11. 2026</span>
         <div class="hidden gap-6 text-sm font-light sm:flex">
           <a
@@ -418,5 +423,15 @@
     </footer>
 
     <script src="src/i18n.js"></script>
+    <script>
+      const navName = document.getElementById('nav-name')
+      new IntersectionObserver(
+        ([entry]) => {
+          navName.classList.toggle('opacity-0', entry.isIntersecting)
+          navName.classList.toggle('opacity-100', !entry.isIntersecting)
+        },
+        { threshold: 0 },
+      ).observe(document.querySelector('section'))
+    </script>
   </body>
 </html>
