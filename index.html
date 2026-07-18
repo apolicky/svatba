@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/style.css" />
+    <link rel="icon" href="img/remdih-red.svg" type="image/svg+xml" />
   </head>
   <body class="bg-cream font-body text-forest">
     <!-- Nav -->
@@ -27,39 +28,39 @@
         <div class="hidden gap-6 text-sm font-light sm:flex">
           <a
             href="#timeline"
-            class="hover:text-red transition-colors"
+            class="transition-colors hover:text-red"
             data-i18n="nav.schedule"
             >Harmonogram</a
           >
           <a
             href="#venue"
-            class="hover:text-red transition-colors"
+            class="transition-colors hover:text-red"
             data-i18n="nav.venue"
             >Místo</a
           >
           <a
             href="#transport"
-            class="hover:text-red transition-colors"
+            class="transition-colors hover:text-red"
             data-i18n="nav.transport"
             >Doprava</a
           >
           <a
             href="#dresscode"
-            class="hover:text-red transition-colors"
+            class="transition-colors hover:text-red"
             data-i18n="nav.dresscode"
             >Dress code</a
           >
           <a
             href="#gifts"
-            class="hover:text-red transition-colors"
+            class="transition-colors hover:text-red"
             data-i18n="nav.gifts"
             >Dary</a
           >
-          <a href="#rsvp" class="hover:text-red transition-colors">RSVP</a>
+          <a href="#rsvp" class="transition-colors hover:text-red">RSVP</a>
         </div>
         <button
           id="lang-toggle"
-          class="text-red hover:bg-red px-3 py-1 text-xs tracking-wider transition-all hover:text-forest"
+          class="px-3 py-1 text-xs tracking-wider text-red transition-all hover:bg-red hover:text-forest"
         >
           EN
         </button>
@@ -79,10 +80,20 @@
         27. 11. 2026
       </p>
       <p
-        class="mt-2 font-light tracking-wide text-forest/60 sm:text-base"
+        class="mt-2 flex flex-row font-light tracking-wide text-forest/60 *:px-0.5 sm:text-base"
         data-i18n="hero.venue"
       >
-        Atrium Žižkov · Praha 3
+        <span>Atrium Žižkov</span>
+        <span>·</span>
+        <span>Praha 3</span>
+        <!-- <span>·</span>
+        <span class="my-auto w-auto"
+          ><img
+            src="img/zizka.svg"
+            alt=""
+            aria-hidden="true"
+            class="filter-red h-4 w-max"
+        /></span> -->
       </p>
       <a
         href="#rsvp"
@@ -111,7 +122,7 @@
         harmonogram
       </h2>
       <p
-        class="text-red mb-12 mt-2 text-center text-xs uppercase tracking-widest"
+        class="mb-12 mt-2 text-center text-xs uppercase tracking-widest text-red"
         data-i18n="timeline.subheading"
       >
         Program dne
@@ -121,11 +132,11 @@
         <!-- Arrival -->
         <div class="flex gap-6">
           <div class="w-28 shrink-0 pt-1 text-right">
-            <span class="text-red text-sm font-light">12:00–13:00</span>
+            <span class="text-sm font-light text-red">12:00–13:00</span>
           </div>
           <div class="flex flex-col items-center">
-            <div class="bg-red mt-1.5 h-3 w-3 shrink-0 rounded-full"></div>
-            <div class="bg-red/30 mt-1 w-px flex-1"></div>
+            <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-red"></div>
+            <div class="mt-1 w-px flex-1 bg-red/30"></div>
           </div>
           <div class="pb-10">
             <p class="font-medium text-forest" data-i18n="timeline.arrival">
@@ -136,11 +147,11 @@
         <!-- Ceremony -->
         <div class="flex gap-6">
           <div class="w-28 shrink-0 pt-1 text-right">
-            <span class="text-red text-sm font-light">14:00–15:00</span>
+            <span class="text-sm font-light text-red">14:00–15:00</span>
           </div>
           <div class="flex flex-col items-center">
-            <div class="bg-red mt-1.5 h-3 w-3 shrink-0 rounded-full"></div>
-            <div class="bg-red/30 mt-1 w-px flex-1"></div>
+            <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-red"></div>
+            <div class="mt-1 w-px flex-1 bg-red/30"></div>
           </div>
           <div class="pb-10">
             <p class="font-medium text-forest" data-i18n="timeline.ceremony">
@@ -151,11 +162,11 @@
         <!-- Reception -->
         <div class="flex gap-6">
           <div class="w-28 shrink-0 pt-1 text-right">
-            <span class="text-red text-sm font-light">15:00–23:00</span>
+            <span class="text-sm font-light text-red">15:00–23:00</span>
           </div>
           <div class="flex flex-col items-center">
-            <div class="bg-red mt-1.5 h-3 w-3 shrink-0 rounded-full"></div>
-            <div class="bg-red/30 mt-1 w-px flex-1"></div>
+            <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-red"></div>
+            <div class="mt-1 w-px flex-1 bg-red/30"></div>
           </div>
           <div class="pb-10">
             <p class="font-medium text-forest" data-i18n="timeline.reception">
@@ -172,10 +183,10 @@
         <!-- End -->
         <div class="flex gap-6">
           <div class="w-28 shrink-0 pt-1 text-right">
-            <span class="text-red text-sm font-light">23:00</span>
+            <span class="text-sm font-light text-red">23:00</span>
           </div>
           <div class="flex flex-col items-center">
-            <div class="bg-red mt-1.5 h-3 w-3 shrink-0 rounded-full"></div>
+            <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-red"></div>
           </div>
           <div class="pb-10">
             <p class="font-medium text-forest" data-i18n="timeline.end">
@@ -204,7 +215,7 @@
         místo konání
       </h2>
       <p
-        class="text-red mb-4 mt-2 text-center text-xs uppercase tracking-widest"
+        class="mb-4 mt-2 text-center text-xs uppercase tracking-widest text-red"
         data-i18n="venue.subheading"
       >
         Kde nás najdete
@@ -213,7 +224,7 @@
       <p class="mb-10 text-center font-light text-forest/60">
         Čajkovského 12, Praha 3
       </p>
-      <div class="border-red/20 overflow-hidden rounded border shadow-sm">
+      <div class="overflow-hidden rounded border border-red/20 shadow-sm">
         <iframe
           src="https://maps.google.com/maps?q=Cajkovskeho+12+Praha+3&output=embed"
           width="100%"
@@ -230,7 +241,7 @@
           href="https://maps.app.goo.gl/LYCDrHqSk6PRV7qu8"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-red text-sm uppercase tracking-widest hover:underline"
+          class="text-sm uppercase tracking-widest text-red hover:underline"
           data-i18n="venue.maplink"
         >
           Otevřít v Google Maps →
@@ -256,7 +267,7 @@
         doprava
       </h2>
       <p
-        class="text-red mb-10 mt-2 text-center text-xs uppercase tracking-widest"
+        class="mb-10 mt-2 text-center text-xs uppercase tracking-widest text-red"
         data-i18n="transport.subheading"
       >
         Jak se k nám dostat
@@ -325,7 +336,7 @@
         dress code
       </h2>
       <p
-        class="text-red mb-10 mt-2 text-xs uppercase tracking-widest"
+        class="mb-10 mt-2 text-xs uppercase tracking-widest text-red"
         data-i18n="dresscode.subheading"
       >
         Oblečení
@@ -363,7 +374,7 @@
         dary
       </h2>
       <p
-        class="text-red mb-10 mt-2 text-xs uppercase tracking-widest"
+        class="mb-10 mt-2 text-xs uppercase tracking-widest text-red"
         data-i18n="gifts.subheading"
       >
         Přání
@@ -392,7 +403,7 @@
         rsvp
       </h2>
       <p
-        class="text-red mb-6 mt-2 text-xs uppercase tracking-widest"
+        class="mb-6 mt-2 text-xs uppercase tracking-widest text-red"
         data-i18n="rsvp.subheading"
       >
         Potvrzení účasti
@@ -417,7 +428,7 @@
     <!-- Footer -->
     <footer class="mt-16 py-5 text-center text-forest">
       <p class="font-title text-2xl">veronika + adam</p>
-      <p class="text-red/50 relative -top-4 text-xs tracking-widest">
+      <p class="relative -top-4 text-xs tracking-widest text-red/50">
         27. 11. 2026 · Atrium Žižkov · Praha 3
       </p>
     </footer>
