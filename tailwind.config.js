@@ -7,7 +7,9 @@ module.exports = {
         cream: '#fff8ef',
         forest: '#003e1f',
         gold: '#c4a263',
-        red: '#bf4e30'
+        // red: '#bf4e30'
+        // red: '#71091C' // tmava ruda
+        red: '#970C26'
       },
       fontFamily: {
         title: ['"The Holiday"', 'cursive'],

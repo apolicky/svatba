@@ -109,7 +109,7 @@
         src="img/remdih.svg"
         alt=""
         aria-hidden="true"
-        class="filter-red h-6 w-auto"
+        class="filter-red h-5 w-auto"
       />
     </div>
 
@@ -125,14 +125,14 @@
         class="mb-12 mt-2 text-center text-xs uppercase tracking-widest text-red"
         data-i18n="timeline.subheading"
       >
-        Program dne
+        Předběžný program dne
       </p>
 
       <div>
         <!-- Arrival -->
         <div class="flex gap-6">
           <div class="w-28 shrink-0 pt-1 text-right">
-            <span class="text-sm font-light text-red">12:00–13:00</span>
+            <span class="text-sm font-light text-red">12:30–13:30</span>
           </div>
           <div class="flex flex-col items-center">
             <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-red"></div>
@@ -147,7 +147,7 @@
         <!-- Ceremony -->
         <div class="flex gap-6">
           <div class="w-28 shrink-0 pt-1 text-right">
-            <span class="text-sm font-light text-red">14:00–15:00</span>
+            <span class="text-sm font-light text-red">14:00–14:30</span>
           </div>
           <div class="flex flex-col items-center">
             <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-red"></div>
@@ -170,12 +170,6 @@
           </div>
           <div class="pb-10">
             <p class="font-medium text-forest" data-i18n="timeline.reception">
-              Recepce &amp; večeře
-            </p>
-            <p
-              class="mt-1 text-sm font-light text-forest/60"
-              data-i18n="timeline.reception.sub"
-            >
               Raut, hudba a oslava
             </p>
           </div>
@@ -187,10 +181,25 @@
           </div>
           <div class="flex flex-col items-center">
             <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-red"></div>
+            <div class="mt-1 w-px flex-1 bg-red/30"></div>
           </div>
           <div class="pb-10">
             <p class="font-medium text-forest" data-i18n="timeline.end">
-              Konec večera
+              Konec v Atriu
+            </p>
+          </div>
+        </div>
+        <!-- After party -->
+        <div class="flex gap-6">
+          <div class="w-28 shrink-0 pt-1 text-right">
+            <span class="text-sm font-light text-red">23:00 +</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="mt-1.5 h-3 w-3 shrink-0 rounded-full bg-red"></div>
+          </div>
+          <div class="pb-10">
+            <p class="font-medium text-forest" data-i18n="timeline.afterParty">
+              After party
             </p>
           </div>
         </div>
@@ -202,7 +211,7 @@
         src="img/remdih.svg"
         alt=""
         aria-hidden="true"
-        class="filter-red h-6 w-auto"
+        class="filter-red h-5 w-auto"
       />
     </div>
 
@@ -254,7 +263,7 @@
         src="img/remdih.svg"
         alt=""
         aria-hidden="true"
-        class="filter-red h-6 w-auto"
+        class="filter-red h-5 w-auto"
       />
     </div>
 
@@ -282,6 +291,9 @@
           </p>
           <p data-i18n="transport.metro.desc">
             Linka A, stanice Jiřího z Poděbrad – cca 10 minut pěšky.
+            <span class="italic"
+              >Se zastávkou metra Flora nepočítejte, je zavřená.</span
+            >
           </p>
         </div>
         <div>
@@ -292,7 +304,7 @@
             Tramvaj
           </p>
           <p data-i18n="transport.tram.desc">
-            Zastávka Čajkovského – linky v okolí Žižkova.
+            Zastávka Lipanská nebo Olšanské náměstí.
           </p>
         </div>
         <div>
@@ -303,8 +315,17 @@
             Autem
           </p>
           <p data-i18n="transport.car.desc">
-            Parkování v okolních ulicích (modré zóny). Doporučujeme využít
-            veřejnou dopravu.
+            Parkování v okolních ulicích -- modré (40kč/h) a fialové (30kč/h)
+            zóny.<br />
+            Za hotelem Olšanka (cca 10m chůze) bývají volná místa (fialová
+            zóna).<br />
+            Nebo mrkněte na
+            <a
+              href="https://mapy.com/s/kotozasepo"
+              target="_blank"
+              class="text-blue-900 underline"
+              >Mapy.com</a
+            >, ty přímo ukazují barvy zón a jejich sazby.
           </p>
         </div>
         <div>
@@ -315,7 +336,7 @@
             Ubytování
           </p>
           <p data-i18n="transport.hotel.desc">
-            Hotel Olšanka se nachází v docházkové vzdálenosti od místa konání.
+            Hotel Olšanka v docházkové vzdálenosti nebo si napište o jiné tipy.
           </p>
         </div>
       </div>
@@ -326,7 +347,7 @@
         src="img/remdih.svg"
         alt=""
         aria-hidden="true"
-        class="filter-red h-6 w-auto"
+        class="filter-red h-5 w-auto"
       />
     </div>
 
@@ -336,23 +357,25 @@
         dress code
       </h2>
       <p
-        class="mb-10 mt-2 text-xs uppercase tracking-widest text-red"
-        data-i18n="dresscode.subheading"
-      >
-        Oblečení
-      </p>
-      <p
-        class="mb-3 text-lg font-medium text-forest"
-        data-i18n="dresscode.label"
-      >
-        Formální
-      </p>
-      <p
         class="font-light leading-relaxed text-forest/70"
-        data-i18n="dresscode.desc"
+        data-i18n="dresscode.desc1"
       >
-        Prosíme o formální večerní oblečení. Pánové smoking nebo tmavý oblek,
-        dámy večerní šaty nebo kostým. Bílá je vyhrazena pro nevěstu.
+        Budeme rádi, když dorazíte hezky oblečení. U pánů ideálně oblek, klidně
+        v ležérnějším pojetí, případně kalhoty se sakem.
+      </p>
+      <p
+        class="mt-2 font-light leading-relaxed text-forest/70"
+        data-i18n="dresscode.desc2"
+      >
+        Výběr barev necháváme na vás, jen prosíme vynechat výrazné neonové
+        odstíny.
+      </p>
+      <p
+        class="mt-2 font-light leading-relaxed text-forest/70"
+        data-i18n="dresscode.desc3"
+      >
+        Ve foyer je k dispozici šatna, takže si klidně vezměte pohodlnější boty
+        nebo oblečení na převlečení na pozdější část večera.
       </p>
     </section>
 
@@ -361,7 +384,7 @@
         src="img/remdih.svg"
         alt=""
         aria-hidden="true"
-        class="filter-red h-6 w-auto"
+        class="filter-red h-5 w-auto"
       />
     </div>
 
@@ -374,17 +397,16 @@
         dary
       </h2>
       <p
-        class="mb-10 mt-2 text-xs uppercase tracking-widest text-red"
-        data-i18n="gifts.subheading"
+        class="font-light leading-relaxed text-forest/70"
+        data-i18n="gifts.desc1"
       >
-        Přání
+        Vaše přítomnost je pro nás nejvíc 😘.
       </p>
       <p
         class="font-light leading-relaxed text-forest/70"
-        data-i18n="gifts.desc"
+        data-i18n="gifts.desc2"
       >
-        Největší radost nám uděláte finanční hotovostí, která nám pomůže začít
-        náš společný život. Vaše přítomnost je pro nás tím největším darem.
+        Finanční dar ale neodmítneme.
       </p>
     </section>
 
@@ -393,7 +415,7 @@
         src="img/remdih.svg"
         alt=""
         aria-hidden="true"
-        class="filter-red h-6 w-auto"
+        class="filter-red h-5 w-auto"
       />
     </div>
 
@@ -403,25 +425,22 @@
         rsvp
       </h2>
       <p
-        class="mb-6 mt-2 text-xs uppercase tracking-widest text-red"
-        data-i18n="rsvp.subheading"
-      >
-        Potvrzení účasti
-      </p>
-      <p
         class="mb-3 font-light leading-relaxed text-forest/70"
         data-i18n="rsvp.desc"
       >
-        Prosíme o potvrzení vaší účasti do <strong>31. 10. 2026</strong>.
+        Prosíme o potvrzení vaší účasti do
+        <strong class="text-red">15. 10. 2026</strong>.
       </p>
       <p class="mb-8 font-light text-forest/70" data-i18n="rsvp.how">
-        Dejte nám vědět na e-mail níže.
+        Vyplňte nám prosím tenhle:
       </p>
       <a
-        href="mailto:svatba@apolicky.xyz"
-        class="inline-block bg-forest px-10 py-4 font-mono text-sm lowercase tracking-widest text-cream transition-colors hover:bg-forest/90"
+        href="https://forms.gle/zhVjWdN86byZcGjn7"
+        target="_blank"
+        class="inline-block bg-forest px-10 py-4 font-mono text-sm tracking-widest text-cream transition-colors hover:bg-forest/90"
+        data-i18n="rsvp.formLink"
       >
-        svatba@apolicky.xyz
+        formulář v Google Docs
       </a>
     </section>
 
