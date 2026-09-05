@@ -24,7 +24,7 @@ const translations = {
     'transport.tram.title': 'Tramvaj',
     'transport.tram.desc': 'Zastávka Lipanská nebo Olšanské náměstí.',
     'transport.car.title': 'Autem',
-    'transport.car.desc': 'Parkování v okolních ulicích -- modré (40kč/h) a fialové (30kč/h) zóny.<br /> Za hotelem Olšanka (cca 10m chůze) bývají volná místa (fialová zóna).<br /> Nebo mrkněte na <a href="https://mapy.com/s/kotozasepo" target="_blank" class= "text-blue-900 underline"> Mapy.com</a>, ty přímo ukazují barvy zón a jejich sazby.',
+    'transport.car.desc': 'Parkování v okolních ulicích – modré (40kč/h) a fialové (30kč/h) zóny.<br /> Za hotelem Olšanka (cca 10m chůze) bývají volná místa (fialová zóna).<br /> Nebo mrkněte na <a href="https://mapy.com/s/kotozasepo" target="_blank" class= "text-blue-900 underline"> Mapy.com</a>, ty přímo ukazují barvy zón a jejich sazby.',
     'transport.hotel.title': 'Ubytování',
     'transport.hotel.desc': 'Hotel Olšanka v docházkové vzdálenosti nebo si napište o jiné tipy.',
     'dresscode.subheading': 'Oblečení',
@@ -72,7 +72,7 @@ const translations = {
     'transport.tram.desc': 'Get off at Lipanská or Olšanské náměstí.',
 
     'transport.car.title': 'By Car',
-    'transport.car.desc': 'Street parking is available nearby -- blue (CZK 40/hour) and purple (CZK 30/hour) parking zones.<br /> There are usually spaces available behind Hotel Olšanka (about a 10-minute walk, purple zone).<br /> You can also check <a href="https://mapy.com/s/kotozasepo" target="_blank" class="text-blue-900 underline">Mapy.com</a>, which shows the parking zones and their rates.',
+    'transport.car.desc': 'Street parking is available nearby – blue (CZK 40/hour) and purple (CZK 30/hour) parking zones.<br /> There are usually spaces available behind Hotel Olšanka (about a 10-minute walk, purple zone).<br /> You can also check <a href="https://mapy.com/s/kotozasepo" target="_blank" class="text-blue-900 underline">Mapy.com</a>, which shows the parking zones and their rates.',
 
     'transport.hotel.title': 'Accommodation',
     'transport.hotel.desc': 'Hotel Olšanka is within walking distance, or feel free to ask us for other recommendations.',
