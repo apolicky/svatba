@@ -17,6 +17,7 @@ const translations = {
     'venue.heading': 'místo konání',
     'venue.subheading': 'Kde nás najdete',
     'venue.maplink': 'Otevřít v Google Maps →',
+    'venue.maplink2': 'Otevřít v Mapy.com →',
     'transport.heading': 'doprava',
     'transport.subheading': 'Jak se k nám dostat',
     'transport.metro.title': 'Metro',
@@ -61,6 +62,7 @@ const translations = {
     'venue.heading': 'venue',
     'venue.subheading': 'Where to find us',
     'venue.maplink': 'Open in Google Maps →',
+    'venue.maplink2': 'Open in Mapy.com →',
 
     'transport.heading': 'getting there',
     'transport.subheading': 'How to get there',
@@ -86,7 +88,7 @@ const translations = {
     'gifts.heading': 'gifts',
     'gifts.subheading': 'A Little Note',
     'gifts.desc1': 'Having you there with us is the best gift we could ask for 😘.',
-    'gifts.desc2': 'That said, if you’d like to give us something, a monetary gift would be greatly appreciated.',
+    'gifts.desc2': '',
 
     'rsvp.desc': 'Please RSVP by <strong class="text-red">15 October 2026</strong>',
     'rsvp.how': 'Please fill out this:',
@@ -109,4 +111,11 @@ function applyTranslations(lang) {
 
 document.getElementById('lang-toggle').addEventListener('click', () => {
   applyTranslations(currentLang === 'cs' ? 'en' : 'cs')
+})
+
+document.getElementById('rsvp-form-link').addEventListener('click', (e) => {
+  if (currentLang === 'en') {
+    e.preventDefault()
+    alert('Yo Maxi, just let us know on whatsapp 😉')
+  }
 })

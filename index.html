@@ -86,14 +86,6 @@
         <span>Atrium Žižkov</span>
         <span>·</span>
         <span>Praha 3</span>
-        <!-- <span>·</span>
-        <span class="my-auto w-auto"
-          ><img
-            src="img/zizka.svg"
-            alt=""
-            aria-hidden="true"
-            class="filter-red h-4 w-max"
-        /></span> -->
       </p>
       <a
         href="#rsvp"
@@ -245,7 +237,9 @@
           title="Atrium Žižkov"
         ></iframe>
       </div>
-      <div class="mt-6 text-center">
+      <div
+        class="mt-6 flex flex-col flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center"
+      >
         <a
           href="https://maps.app.goo.gl/LYCDrHqSk6PRV7qu8"
           target="_blank"
@@ -254,6 +248,15 @@
           data-i18n="venue.maplink"
         >
           Otevřít v Google Maps →
+        </a>
+        <a
+          href="https://mapy.com/s/labovurama"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm uppercase tracking-widest text-red hover:underline"
+          data-i18n="venue.maplink2"
+        >
+          Otevřít v Mapy.com →
         </a>
       </div>
     </section>
@@ -435,6 +438,7 @@
         Vyplňte nám prosím tenhle:
       </p>
       <a
+        id="rsvp-form-link"
         href="https://forms.gle/zhVjWdN86byZcGjn7"
         target="_blank"
         class="inline-block bg-forest px-10 py-4 font-mono text-sm tracking-widest text-cream transition-colors hover:bg-forest/90"
