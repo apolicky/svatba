@@ -5,9 +5,10 @@ const translations = {
     'nav.transport': 'Doprava',
     'nav.dresscode': 'Dress code',
     'nav.gifts': 'Dary',
+    'nav.music': 'Hudba',
     'hero.savethedate': 'Save the Date',
     'hero.venue': 'Atrium Žižkov · Praha 3',
-    'hero.cta': 'Potvrďte účast',
+    'hero.cta': 'Buď taky DJ',
     'timeline.heading': 'harmonogram',
     'timeline.subheading': 'Předběžný program dne',
     'timeline.arrival': 'Příchod hostů',
@@ -40,9 +41,12 @@ const translations = {
     'gifts.subheading': 'Přání',
     'gifts.desc1': 'Vaše přítomnost je pro nás nejvíc 😘.',
     'gifts.desc2': 'Finanční dar ale neodmítneme.',
-    'rsvp.desc': 'Prosíme o potvrzení vaší účasti do <strong class="text-red">15. 10. 2026</strong>',
+    'rsvp.desc': 'Už není potřeba nic potvrzovat, pojďme si to užít.',
     'rsvp.how': 'Vyplňte nám prosím tenhle:',
-    'rsvp.formLink': 'formulář v Google Docs',
+    'rsvp.formLink': 'formulář v Google Docs', 'gifts.heading': 'dary',
+    'music.heading': 'hudba',
+    'music.desc': 'Přidej nějaký song, co si dáme na parketu.',
+
   },
   en: {
     'nav.schedule': 'Schedule',
@@ -50,10 +54,11 @@ const translations = {
     'nav.transport': 'Getting There',
     'nav.dresscode': 'Dress Code',
     'nav.gifts': 'Gifts',
+    'nav.music': 'Music',
 
     'hero.savethedate': 'Save the Date',
     'hero.venue': 'Atrium Žižkov · Prague 3',
-    'hero.cta': 'RSVP',
+    'hero.cta': 'Take part at DJ-ing',
 
     'timeline.heading': 'schedule',
     'timeline.subheading': 'Tentative schedule for the day',
@@ -96,9 +101,13 @@ const translations = {
     'gifts.desc1': 'Having you there with us is the best gift we could ask for 😘.',
     'gifts.desc2': '',
 
-    'rsvp.desc': 'Please RSVP by <strong class="text-red">15 October 2026</strong>',
+    'rsvp.desc': 'Lets have some fun, no need to RSVP anymore.',
     'rsvp.how': 'Please fill out this:',
     'rsvp.formLink': 'Google Form',
+
+    'music.heading': 'music',
+    'music.desc': 'Add a song you\'d like to dance to.',
+
   }
 }
 

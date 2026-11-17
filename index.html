@@ -56,7 +56,13 @@
             data-i18n="nav.gifts"
             >Dary</a
           >
-          <a href="#rsvp" class="transition-colors hover:text-red">RSVP</a>
+
+          <a
+            href="#music"
+            class="transition-colors hover:text-red"
+            data-i18n="nav.music"
+            >Hudba</a
+          >
         </div>
         <button
           id="lang-toggle"
@@ -88,11 +94,11 @@
         <span>Praha 3</span>
       </p>
       <a
-        href="#rsvp"
+        href="#music"
         class="mt-12 border border-forest px-8 py-3 text-sm uppercase tracking-widest text-forest transition-all hover:bg-forest hover:text-cream"
         data-i18n="hero.cta"
       >
-        Potvrďte účast
+        Buď taky DJ
       </a>
     </section>
 
@@ -473,28 +479,27 @@
       />
     </div>
 
-    <!-- RSVP -->
-    <section id="rsvp" class="mx-auto max-w-2xl px-4 py-16 text-center">
-      <h2 class="text-center font-title text-4xl text-forest sm:text-5xl">
-        rsvp
+    <!-- Muzika -->
+    <section id="music" class="mx-auto max-w-2xl px-4 py-16 text-center">
+      <h2
+        class="text-center font-title text-4xl text-forest sm:text-5xl"
+        data-i18n="music.heading"
+      >
+        hudba
       </h2>
       <p
         class="mb-3 font-light leading-relaxed text-forest/70"
-        data-i18n="rsvp.desc"
+        data-i18n="music.desc"
       >
-        Prosíme o potvrzení vaší účasti do
-        <strong class="text-red">15. 10. 2026</strong>.
-      </p>
-      <p class="mb-8 font-light text-forest/70" data-i18n="rsvp.how">
-        Vyplňte nám prosím tenhle:
+        Přidej nějaký song, co si dáme na parketu.
       </p>
       <a
-        id="rsvp-form-link"
+        id="music-spotify-jam"
         class="inline-block bg-forest px-10 py-4 font-mono text-sm tracking-widest text-cream transition-colors hover:bg-forest/90"
-        data-i18n="rsvp.formLink"
+        href="./hudba/index.html"
+        target="_blank"
       >
-        <!-- href="https://forms.gle/zhVjWdN86byZcGjn7" target="_blank" -->
-        formulář v Google Docs
+        Spotify jam
       </a>
     </section>
 
