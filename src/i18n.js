@@ -130,7 +130,7 @@ document.getElementById('lang-toggle').addEventListener('click', () => {
 
 
 document.getElementById('music-spotify-jam').addEventListener('click', (e) => {
-  // return; // TODO: tohle odkomentovat na svatbe.
+  return; // TODO: tohle odkomentovat na svatbe.
   e.preventDefault()
   if (currentLang === 'en') {
     alert("We'll enable the Spotify jam link after the ceremony, don't worry 😉")
