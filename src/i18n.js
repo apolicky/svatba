@@ -128,9 +128,14 @@ document.getElementById('lang-toggle').addEventListener('click', () => {
   applyTranslations(currentLang === 'cs' ? 'en' : 'cs')
 })
 
-document.getElementById('rsvp-form-link').addEventListener('click', (e) => {
+
+document.getElementById('music-spotify-jam').addEventListener('click', (e) => {
+  // return; // TODO: tohle odkomentovat na svatbe.
+  e.preventDefault()
   if (currentLang === 'en') {
-    e.preventDefault()
-    alert('Yo Maxi, just let us know on whatsapp 😉')
+    alert("We'll enable the Spotify jam link after the ceremony, don't worry 😉")
+  } else {
+    alert("Po obřadu link zprovozníme, neboj 😉")
   }
 })
+
